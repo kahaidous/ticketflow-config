@@ -1,0 +1,3 @@
+ticketflow:
+  demo:
+    message: "Hello from the Config Server"
