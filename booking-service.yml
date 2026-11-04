@@ -23,6 +23,7 @@ spring:
       client:
         config:
           default:
+            logger-level: full
             connect-timeout: 2000
             read-timeout: 3000
 # Resilience (step-08): the Feign client of event-service goes through a Resilience4J circuit breaker.
@@ -39,3 +40,8 @@ spring:
   jpa:
     hibernate: 
       ddl-auto: update
+
+
+logging:
+  level:
+    com.ticketflow.bookingservice.clients.EventClient: DEBUG
