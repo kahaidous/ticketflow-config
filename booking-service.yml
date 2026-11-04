@@ -45,3 +45,9 @@ spring:
 logging:
   level:
     com.ticketflow.bookingservice.clients.EventClient: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh,circuitbreakers,circuitbreakerevents
