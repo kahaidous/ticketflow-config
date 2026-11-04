@@ -1,6 +1,7 @@
 spring:
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/booking}
+    username: ${DB_PASSWORD:ticketflow}
     password: ${DB_PASSWORD:ticketflow}
   jpa:
     hibernate: 
