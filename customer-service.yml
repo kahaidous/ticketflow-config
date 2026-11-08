@@ -5,7 +5,7 @@ ticketflow:
 
 spring:
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/customers}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/customer}
     username: ${DB_USER:ticketflow}
     password: ${DB_PASSWORD:ticketflow}
   jpa:
