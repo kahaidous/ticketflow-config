@@ -35,7 +35,7 @@ spring:
           enabled: true
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/booking}
-    username: ${DB_PASSWORD:ticketflow}
+    username: ${DB_USER:ticketflow}
     password: ${DB_PASSWORD:ticketflow}
   jpa:
     hibernate: 
