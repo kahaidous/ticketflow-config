@@ -14,6 +14,8 @@ ticketflow:
       wait-in-open-state: 10s
       permitted-calls-in-half-open-state: 3
       time-limit: 4s
+    payment-service:
+      wait-in-open-state: 10s
 
 # Never wait forever for another service: without timeouts, one slow service
 # can freeze this service too.
@@ -22,6 +24,9 @@ spring:
     openfeign:
       client:
         config:
+          payment-service:
+            connect-timeout: 1000
+            read-timeout: 3000
           default:
             logger-level: full
             connect-timeout: 2000
